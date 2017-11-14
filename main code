@@ -1,0 +1,333 @@
+/*--Opacity--*/
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/*--VoteBox Changes--*/
+#vote {
+	box-shadow: 0 0 10px #000;
+	border-radius: 40px;
+	width: 255px !important;
+}
+#app #vote .bottom {
+	background: rgba(0,0,0,0);
+}
+#woot, #grab, #meh {
+	margin-top: 0 !important;
+}
+#vote .selected,
+#vote .selected .value {
+	font-weight: bold;
+	color: #FFF;
+}
+.pop-menu, .pop-menu .bar {
+	border-radius: 20px 20px 0 0;
+	background: transparent;
+}
+.pop-menu .bar {
+	background: linear-gradient(hsla(260,50%,50%,0.8), hsla(260,50%,30%,0.8));
+}
+.pop-menu .bar-divider {
+	background: linear-gradient(hsla(0,0%,90%,0.8), hsla(0,0%,60%,0.8));
+}
+.pop-menu .menu ul {
+	background: hsla(260,10%,7%,0.8);
+}
+.pop-menu .menu ul i + span {
+	font-weight: bold;
+}
+.pop-menu .menu ul li:hover {
+	background: linear-gradient(hsla(260,50%,50%,0.2), hsla(260,50%,30%,0.2));;
+}
+.pop-menu .menu ul .create:hover {
+	background: linear-gradient(hsl(260,40%,50%), hsl(260,40%,30%));
+}
+.pop-menu .menu::-webkit-scrollbar {
+	background: hsl(260,10%,20%) !important;
+	box-shadow: inset 0 0 10px #000;
+	width: 10px;
+}
+.pop-menu .menu::-webkit-scrollbar-thumb {
+	background: linear-gradient(to right, hsl(260,40%,60%), hsl(260,40%,40%));
+	box-shadow: inset 0 0 5px hsla(0,0%,100%,0.3);
+}
+#woot {
+	border-radius: 30px 0 0 30px;
+	background: linear-gradient(135deg, hsla(0,0%,50%,0.3), hsla(0,0%,30%,0.3)) !important;
+	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
+}
+#woot.selected, #woot-rs .title {
+	background: linear-gradient(135deg, hsla(90,80%,50%,0.8), hsla(90,80%,30%,0.8)) !important;
+	box-shadow: inset 0 0 10px hsl(70,100%,40%) !important;
+}
+#grab {
+	background: linear-gradient(hsla(0,0%,50%,0.3), hsla(0,0%,30%,0.3)) !important;
+	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
+}
+#grab.selected, #grab-rs .title {
+	background: linear-gradient(hsla(270,70%,50%,0.8), hsla(265,70%,30%,0.8)) !important;
+	box-shadow: inset 0 0 10px hsl(280,100%,40%) !important;
+}
+#meh {
+	background: linear-gradient(225deg, hsla(0,0%,50%,0.3), hsla(0,0%,30%,0.3)) !important;
+	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
+	border-radius: 0 30px 30px 0;
+	margin-right: 0 !important;
+}
+#meh.selected, #meh-rs .title {
+	background: linear-gradient(225deg, hsla(5,80%,50%,0.8), hsla(0,80%,40%,0.8)) !important;
+	box-shadow: inset 0 0 10px hsl(15,100%,50%) !important;
+}
+
+/*--Plug Changes--*/
+#room-settings a:hover, #chat a:hover {
+	color: hsl(200,100%,55%) !important;
+	text-shadow: 0 0 5px;
+}
+#search-menu .menu ul  i, #search-menu-icon {
+	/*Adblock fix*/
+	display: inline !important;
+}
+.slider .line, #user-settings .slider .bar {
+	background: linear-gradient(to right, hsl(210,100%,50%), hsl(269, 100%, 50%)) !important;
+}
+#user-settings .slider .bar {
+	width: calc(100% - 1px) !important;
+}
+.slider .circle, #user-settings .slider .circle {
+	background: #fff !important;	
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}
+#tooltip span, #tooltip.blue span {
+	background: radial-gradient(hsla(210,100%,30%,0.9), hsla(220,100%,20%,0.9));
+	border-radius: 13px 13px 13px 0
+}
+#tooltip.orange span {
+	background: radial-gradient(hsla(20,100%,50%,0.9), hsla(10,100%,40%,0.9));
+}
+#tooltip.orange .corner {
+	border-top: 10px solid transparent !important;
+	border-right: 0px solid transparent !important;
+	border-left: 10px solid hsla(10,100%,45%,0.9) !important;
+	border-bottom: 10px solid transparent !important;
+}
+#tooltip.purple span {
+	background: radial-gradient(hsla(270,70%,60%,0.9), hsla(270,70%,50%,0.9));
+}
+#tooltip.purple .corner {
+	border-top: 10px solid transparent !important;
+	border-right: 0px solid transparent !important;
+	border-left: 10px solid hsla(270,70%,52%,0.9) !important;
+	border-bottom: 10px solid transparent !important;
+}
+#tooltip.purple.right .corner {
+	border-top: 10px solid hsla(270,70%,52%,0.9) !important;
+	border-right: 10px solid hsla(270,70%,52%,0.9) !important;
+	border-left: 10px solid transparent !important;
+	border-bottom: 10px solid transparent !important;
+}
+#tooltip.right span {
+	border-radius: 13px 13px 0 13px
+}
+#tooltip .corner {
+	border-top: 10px solid transparent !important;
+	border-right: 0px solid transparent !important;
+	border-left: 10px solid hsla(220,100%,22%,0.9) !important;
+	border-bottom: 10px solid transparent !important;
+}
+#tooltip.right .corner {
+	border-top: 10px solid hsla(220,100%,20%,0.9) !important;
+	border-right: 10px solid hsla(220,100%,22%,0.9) !important;
+	border-left: 10px solid transparent !important;
+	border-bottom: 10px solid transparent !important;
+}
+#playback .background {
+	visibility: hidden;
+}
+.video-only #playback-container {
+	box-shadow: none;
+	border: none !important;
+}
+.video-only #ws-rmvDJ, .video-only #ws-skip {
+	display: none;
+}
+.video-only #vote {
+	width: auto !important;
+	left: 230px !important;
+}
+#user-menu .avatar {
+	background: linear-gradient(rgba(0,0,0,0)70%, hsla(140,50%,90%,0.4) 80%),
+	linear-gradient(hsl(200,70%,20%), hsl(140,70%,20%)) !important;
+	box-shadow: inset 0 0 30px #000;
+}
+.app-header, #app-menu.in-room, #footer, #search, #video-only-dj {
+	background: linear-gradient(hsla(210,10%,20%,0.8), hsla(210,10%,10%,0.8));
+}
+.app-header {
+	box-shadow: 0px 1px 10px #000;
+}
+.app-header #history-button {
+	background: linear-gradient(hsl(210,10%,20%), hsl(210,0%,15%));
+}
+.app-header #header-panel-bar .selected, .app-header #history-button.selected {
+	background: linear-gradient(hsl(220,60%,40%), hsl(220,60%,20%));
+}
+#footer {
+	box-shadow: 0px -1px 10px #000;
+}
+#footer .chevron:before, #footer .chevron:after {
+	background: hsl(200,100%,40%)!important;
+}
+#footer #your-next-media.in-history {
+	color: hsl(10,80%,55%);
+}
+#footer .back {
+	background: linear-gradient(hsl(210,10%,30%), hsl(210,10%,20%)) !important;
+}
+#footer-user .buttons .button:hover, #footer .back:hover, #video-only-dj:hover {
+	background: radial-gradient(hsl(200,100%,60%), hsl(200,100%,30%)) !important;
+	box-shadow: inset 0 0 1px 2px hsla(0,0%,100%,0.3) !important;
+}
+#footer-user .buttons .button.inventory:hover .thumb, #video-only-dj:hover .thumb {
+	border-color: #5bf !important;
+	box-shadow: 0 0 7px #5bf !important;
+}
+#footer-user .info {
+	background: linear-gradient(hsla(210,5%,10%,0.8), hsla(210,5%,5%,0.8));
+	text-shadow: 0 0 5px #000;
+}
+#footer-user .name span {
+	font-weight: bold;
+}
+#footer-user .info .meta .bar .progress {
+	box-shadow: 0 0 10px hsl(205,100%,50%) !important;
+}
+#footer-user .info .points .pp {
+	color: hsl(200,100%,70%);
+}
+.inventory.button .background {
+	visibility: hidden;
+}
+#playlist-button {
+	background: linear-gradient(hsl(205,100%,50%), hsl(205,100%,40%));
+}
+#playlist-import, #playlist-create {
+	background: linear-gradient(135deg, hsl(205,10%,30%), hsl(205,10%,20%));
+}
+#playlist-import:hover, #playlist-create:hover {
+	background: linear-gradient(hsl(205,80%,50%), hsl(205,80%,40%));
+}
+
+/*--shit for me--*/
+.icon-chat-host {
+	background: url(https://raw.githubusercontent.com/WiBla/Script/master/images/chat/rank_host.png);
+	background-position: 2px 0 !important;
+}
+.icon-chat-host + span,
+#user-lists .group.host ~ .user span,
+#dialog-user-role .role-menu .menu ul .host span {
+	color: #db182e !important;
+}
+#user-lists .group.host {
+	color: #db182e;
+	background: linear-gradient(to right, hsla(360,100%,30%,0.5), hsla(360,100%,40%,0.5)) !important;
+	top: 1px;
+}
+#user-rollover.id-5287545 .badge-box > i.bdg,
+.id-5287545 > .badge-box > i.bdg
+{
+    background-image:    url("http://i.imgur.com/Dg6MZ2e.png");
+    border-radius: 6px;
+}
+#user-rollover.id-5287545 > .info > .role span {
+	text-indent: -9999px;
+	line-height:0;
+}
+#user-rollover.id-5287545 > .info > .role span:after {
+	text-indent:0;
+	content:'Host';
+	display:block;
+	line-height: initial;
+        color: #db182e;
+}
+#user-rollover.id-5287545 > .info > .role:hover span:after {
+	text-indent:0;
+	content:'Brand Ambassador';
+	display:block;
+	line-height: initial;
+        color: #89be6c;
+}
+#user-rollover.id-5287545 > .info > .role .icon { 
+	background: url(http://i.imgur.com/zIAEqAk.png) !important; 
+}
+
+#user-rollover.id-5287545 > .info > .role:hover .icon { 
+	background: url(http://i.imgur.com/IO84f0g.png) !important; 
+}
+/*--Other Roles--*/
+.icon-chat-cohost {
+	background: url(https://raw.githubusercontent.com/WiBla/Script/master/images/chat/rank_cohost.png);
+	background-position: 2px 0 !important;
+}
+.icon-chat-cohost + span,
+#dialog-user-role .dialog-body .role-menu .menu ul .cohost span {
+	color: #db182e !important;
+}
+#chat .cm .msg .from.you .un {
+	color: #0bf !important;
+}
+.icon-chat-manager {
+	background: url(https://raw.githubusercontent.com/WiBla/Script/master/images/chat/rank_manager.png);
+	background-position: 2px 0 !important;
+}
+.icon-chat-manager + span,
+#user-lists .group.manager ~ .user span,
+#dialog-user-role .role-menu .menu ul .manager span {
+	color: #ab48c7 !important;
+}
+#user-lists .group.manager {
+	color: #ab48c7;
+	background: linear-gradient(to right, hsla(287, 53%, 53%, 0.5), hsla(287, 53%, 53%, 0.5)) !important;
+}
+.icon-chat-bouncer {
+	background: url(https://raw.githubusercontent.com/WiBla/Script/master/images/chat/rank_bouncer.png);
+	background-position: 1px 0 !important;
+}
+.icon-chat-bouncer + span,
+#user-lists .group.bouncer ~ .user span,
+#dialog-user-role .role-menu .menu ul .bouncer span {
+	color: #5DB4FF !important;
+}
+#user-lists .group.bouncer {
+	color: #5DB4FF;
+	background: linear-gradient(to right, hsla(208, 100%, 68%,0.5), hsla(208, 100%, 68%,0.5)) !important;
+}
+.icon-chat-dj {
+	background: url(https://raw.githubusercontent.com/WiBla/Script/master/images/chat/rank_dj.png);
+	background-position: 0 0 !important;
+}
+#user-lists .group.dj {
+	color: #F7A452;
+	background: linear-gradient(to right, hsla(30, 91%, 65%,0.5), hsla(30, 91%, 65%,0.5)) !important;
+}
+.icon-chat-dj + span,
+#user-lists .group.dj ~ .user span,
+#dialog-user-role .role-menu .menu ul .dj span {
+	color: #F7A452 !important;
+}
+
+/*--Skittles Bitch--*/
+@keyframes rainbow {
+	0% {color: #ff0000;}
+	10% {color: #ff8000;}
+	20% {color: #ffff00;}
+	30% {color: #80ff00;}
+	40% {color: #00ff00;}
+	50% {color: #00ff80;}
+	60% {color: #00ffff;}
+	70% {color: #0080ff;}
+	80% {color: #0000ff;}
+	90% {color: #8000ff;}
+	100% {color: #ff0080;}
+}
