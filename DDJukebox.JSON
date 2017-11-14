@@ -1,0 +1,49 @@
+{
+        "room": "The Desu Diner and Jukebox",
+        "author": "SSJ II Joft",
+	"css": "https://rawgit.com/JohnCrites/plug-CSS/master/DesuDiner.css",
+	"icon": "https://i.imgur.com/aHtOnSa",
+        "colors": {
+        "background": "",
+        "chat": {
+            "admin": "#ff9999",
+            "ambassador": "null",
+            "host": "#33cc33",
+            "cohost": "#0099cc",
+            "manager": "#ff9999",
+            "bouncer": "#ff9999",
+            "residentdj": "null"
+        },
+            "footer": "null",
+            "header": "null"
+        },
+        "images": {
+            "background": "http://i.imgur.com/zSMRtE6.png",
+            "booth": "null",
+            "icons": {
+                "admin": "null",
+                "ambassador": "null",
+                "host": "null",
+                "cohost": "null",
+                "manager": "null",
+                "bouncer": "null",
+                "residentdj": "null"
+            },
+            "playback": ""
+        },
+        "rules": {
+            "allowAutojoin": "false",
+            "allowAutorespond": "true",
+            "allowAutowoot": "true",
+            "allowEmotes": "true",
+            "allowShowingMehs": "true"
+        },
+	"emotes": {
+	    "league":"http://i.imgur.com/5OwqQCZ.png",
+	    "remram":"http://i.imgur.com/fcpxU8B.gif",
+	    "gn":"http://i.imgur.com/oEMMlQD.gif",
+	    "nekospin":"http://i.imgur.com/pZQ5mR8.gif",
+	    "rude":"http://i.imgur.com/L08twQZ.jpg",
+	    "kanna":"http://i.imgur.com/nADEpYD.gif"
+	}
+}
